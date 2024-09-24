@@ -10,7 +10,7 @@
 <body>
     <header>
         <section>
-       <div class="flex bg-neutral">
+       <div class="md:flex bg-yellow-50">
         <div class="navbar">
             <a class="btn btn-success text-xl">Blog</a>
           </div>
@@ -19,22 +19,91 @@
                 <img src="assets/logo.png" alt="">
                 <h2> Donate Bangladesh</h2>
             </div>
-          
+          <!-- Account Balance -->
          <div class="navbar navbar-end gap-3">
             <img src="assets/coin.png" alt="">
-            <div class="stat-value">89,000</div>
+            <div class="stat-value text-base">89 BDT</div>
          </div>
        </div>
+       <div class="divider"></div>
+
     </section>
         <section>
             <div class="text-center">
                 <button class="btn btn-success">Donation</button>
-                <button class="btn btn-outline btn-success">Success</button>
+                <button class="btn btn-outline btn-success">Histoy</button>
             </div>
         </section>
     </header>
     <main>
-
+        <!-- card 1 -->
+          <section class="md:px-24">
+            <div class="md:flex rounded-lg shadow-xl">
+                <img class="p-8" src="assets/noakhali.png" alt="">
+                <div class="card-body">
+                    <div class="flex gap-3">
+                        <button id="account-balance" class="btn"><img src="assets/coin.png" alt="">
+                             10 BDT</button>
+                    </div>
+                  <h2 class="card-title">Donate for Flood at Noakhali</h2>
+                  <p>The recent floods in Noakhali, caused by heavy rainfall and rising river levels, have severely affected the region. Many homes were submerged, displacing thousands of residents and damaging crops. Roads and communication systems were disrupted, hindering relief efforts. Local authorities and NGOs have been working to provide emergency aid to those affected. The flood has highlighted the region's vulnerability to extreme weather events linked to climate change.</p>
+                  <input
+                         type="text"
+                         id="input-add-money"
+                         placeholder="Write Donation Ammount"
+                         class="input input-bordered input-success w-full "/>
+                  <div>
+                        <button id="btn-add-money" class="btn btn-block btn-success">Donate Now</button>
+                  </div>
+                </div>
+              </div>
+          </section>   
+          <!-- card 2 -->
+          <section class="md:px-24">
+            <div class="md:flex rounded-lg shadow-xl">
+                <img class="p-8" src="assets/feni.png" alt="">
+                <div class="card-body">
+                    <div class="flex gap-3">
+                        <button id="account-balance" class="btn"><img src="assets/coin.png" alt="">
+                             10 BDT</button>
+                    </div>
+                  <h2 class="card-title">Donate for Flood at Noakhali</h2>
+                  <p>The recent floods in Noakhali, caused by heavy rainfall and rising river levels, have severely affected the region. Many homes were submerged, displacing thousands of residents and damaging crops. Roads and communication systems were disrupted, hindering relief efforts. Local authorities and NGOs have been working to provide emergency aid to those affected. The flood has highlighted the region's vulnerability to extreme weather events linked to climate change.</p>
+                  <input
+                         type="text"
+                         id="input-add-money"
+                         placeholder="Write Donation Ammount"
+                         class="input input-bordered input-success w-full "/>
+                  <div>
+                        <button id="btn-add-money" class="btn btn-block btn-success">Donate Now</button>
+                  </div>
+                </div>
+              </div>
+          </section> 
+          <!-- card 3
+          <section class="md:p-24">
+            <div class="md:flex rounded-lg shadow-xl">
+                <img class="p-8" src="assets/quota-protest.png" alt="">
+                <div class="card-body">
+                    <div class="flex gap-3">
+                        <button id="account-balance" class="btn"><img src="assets/coin.png" alt="">
+                             10 BDT</button>
+                    </div>
+                  <h2 class="card-title">Donate for Flood at Noakhali</h2>
+                  <p>The recent floods in Noakhali, caused by heavy rainfall and rising river levels, have severely affected the region. Many homes were submerged, displacing thousands of residents and damaging crops. Roads and communication systems were disrupted, hindering relief efforts. Local authorities and NGOs have been working to provide emergency aid to those affected. The flood has highlighted the region's vulnerability to extreme weather events linked to climate change.</p>
+                  <input
+                         type="text"
+                         id="input-add-money"
+                         placeholder="Write Donation Ammount"
+                         class="input input-bordered input-success w-full "/>
+                  <div>
+                        <button id="btn-add-money" class="btn btn-block btn-success">Donate Now</button>
+                  </div>
+                </div>
+              </div>
+            </section> -->
     </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/addMoney.js"></script>
 </body>
 </html>
