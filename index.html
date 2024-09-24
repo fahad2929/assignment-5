@@ -10,7 +10,7 @@
 <body>
     <header>
         <section>
-       <div class="md:flex bg-yellow-50">
+       <div class="md:flex bg-yellow-50 md:p-2 ">
         <div class="navbar">
             <a class="btn btn-success text-xl">Blog</a>
           </div>
@@ -26,18 +26,18 @@
             <h5 class="text-black font-bold">BDT</h5>
          </div>
        </div>
-       <div class="divider"></div>
     </section>
         <section>
-            <div class="text-center">
+            <div class="text-center m-5">
                 <button class="btn btn-success">Donation</button>
                 <button class="btn btn-outline btn-success">Histoy</button>
             </div>
         </section>
+        <div class="divider"></div>
     </header>
     <main>
         <!-- card 1 -->
-          <section class="md:px-24">
+          <section class="md:px-24 py-5">
             <div class="md:flex rounded-lg shadow-xl">
                 <img class="p-8" src="assets/noakhali.png" alt="">
                 <div class="card-body">
@@ -51,7 +51,7 @@
                   <input
                          type="text"
                          id="input-add-money"
-                         placeholder="Write Donation Ammount"
+                         placeholder="Write Donation Amount"
                          class="input input-bordered input-success w-full "/>
                   <div>
                         <button id="btn-add-money" class="btn btn-block btn-success">Donate Now</button>
@@ -60,13 +60,13 @@
               </div>
           </section>   
           <!-- card 2 -->
-          <section class="md:px-24">
+          <section class="md:px-24 py-5">
             <div class="md:flex rounded-lg shadow-xl">
                 <img class="p-8" src="assets/feni.png" alt="">
                 <div class="card-body">
                  <div class="navbar gap-1 bg-slate-100 rounded-xl w-32">
                     <img src="assets/coin.png" alt="">
-                    <div id="account-balance2" class="stat-value text-base">500</div>
+                    <div id="account-balance2" class="stat-value text-base">0</div>
                     <h5 class="text-black font-bold">BDT</h5>
                  </div>
                   <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -84,28 +84,34 @@
                 </div>
               </div>
           </section> 
-          <!-- card 3
-          <section class="md:p-24">
+          
+          <!-- card 3 -->
+          <section class="md:px-24 py-5">
             <div class="md:flex rounded-lg shadow-xl">
                 <img class="p-8" src="assets/quota-protest.png" alt="">
                 <div class="card-body">
-                    <div class="flex gap-3">
-                        <button id="account-balance" class="btn"><img src="assets/coin.png" alt="">
-                             10 BDT</button>
-                    </div>
-                  <h2 class="card-title">Donate for Flood at Noakhali</h2>
-                  <p>The recent floods in Noakhali, caused by heavy rainfall and rising river levels, have severely affected the region. Many homes were submerged, displacing thousands of residents and damaging crops. Roads and communication systems were disrupted, hindering relief efforts. Local authorities and NGOs have been working to provide emergency aid to those affected. The flood has highlighted the region's vulnerability to extreme weather events linked to climate change.</p>
+                 <div class="navbar gap-1 bg-slate-100 rounded-xl w-32">
+                    <img src="assets/coin.png" alt="">
+                    <div id="account-balance3" class="stat-value text-base">0</div>
+                    <h5 class="text-black font-bold">BDT</h5>
+                 </div>
+                  <h2 class="card-title">Aid For Injured in The Quota Movement</h2>
+                  <p class="font-thin text-base">
+                    During various phases of the Quota Movement, protests over reservation policies sometimes turned violent, leading to injuries among protestors, security forces, and bystanders.In response to injuries, governments often deployed emergency services, medical aid, and compensation packages to those affected during the protests.
+
+
+                </p>
                   <input
                          type="text"
-                         id="input-add-money"
+                         id="input-add-money3"
                          placeholder="Write Donation Ammount"
                          class="input input-bordered input-success w-full "/>
                   <div>
-                        <button id="btn-add-money" class="btn btn-block btn-success">Donate Now</button>
+                        <button id="btn-add-money3" class="btn btn-block btn-success">Donate Now</button>
                   </div>
                 </div>
               </div>
-            </section> -->
+          </section> 
     </main>
     <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
