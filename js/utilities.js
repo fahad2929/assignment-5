@@ -26,13 +26,13 @@
     // ...........card 3 .............
 
     function getInput1ValueById(id){
-        const inputValue2 = document.getElementById(id).value;
-        const inputNumber2 = parseFloat(inputValue2);
-        return inputNumber2;
+        const inputValue3 = document.getElementById(id).value;
+        const inputNumber3 = parseFloat(inputValue3);
+        return inputNumber3;
        }
     
        function getText1ValueById(id){
-        const textValue2 = document.getElementById(id).innerText;
-        const textNumber2 = parseFloat(textValue2);
-        return textNumber2;}
+        const textValue3 = document.getElementById(id).innerText;
+        const textNumber3 = parseFloat(textValue3);
+        return textNumber3;}
     
