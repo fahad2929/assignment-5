@@ -35,4 +35,25 @@
         const textValue3 = document.getElementById(id).innerText;
         const textNumber3 = parseFloat(textValue3);
         return textNumber3;}
+
+        function showhistoryById(id){
+            document.getElementById('history').classList.add('hidden');
+            document.getElementById('section1').classList.add('hidden');
+            document.getElementById('section2').classList.add('hidden');
+            document.getElementById('section3').classList.add('hidden');
+
+            // show the section with the provide id as parameter
+            document.getElementById(id).classList.remove('hidden')
+
+        }
+        function showDonationById(id){
+            document.getElementById('history').classList.add('hidden');
+            document.getElementById('section1').classList.add('hidden');
+            document.getElementById('section2').classList.add('hidden');
+            document.getElementById('section3').classList.add('hidden');
+
+            // show the section with the provide id as parameter
+            document.getElementById(id).classList.remove('hidden')
+
+        }
     

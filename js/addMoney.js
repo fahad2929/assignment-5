@@ -47,7 +47,7 @@ document.getElementById('btn-add-money2').addEventListener('click',function(even
 
 
       // ..........card 3 ................
-     document.getElementById('btn-add-money3').addEventListener('click',function(){
+     document.getElementById('btn-add-money3').addEventListener('click',function(event){
         event.preventDefault();
          
         const addMoney2 = getInput1ValueById('input-add-money3');
@@ -66,4 +66,20 @@ document.getElementById('btn-add-money2').addEventListener('click',function(even
        document.getElementById('main-balance').innerText = bala3 ;
        document.getElementById('account-balance3').innerText = newBalance3;
     
+    })
+
+
+    //  show donation 
+    document.getElementById('show-donation')
+    .addEventListener('click',function(){
+   console.log('show donation button clicked')
+   showDonationById(show-donation)
+    });
+    document.getElementById('history').addEventListener('click',function(){
+
+        showhistoryById('history');
+
+    })
+    document.getElementById('show-donation').addEventListener('click',function(){
+        showDonationById('show-donation')
     })
