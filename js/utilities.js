@@ -18,11 +18,11 @@
     const inputNumber2 = parseFloat(inputValue2);
     return inputNumber2;
    }
-
    function getTextValueById(id){
     const textValue2 = document.getElementById(id).innerText;
     const textNumber2 = parseFloat(textValue2);
     return textNumber2;}
+    
     // ...........card 3 .............
 
     function getInput1ValueById(id){
