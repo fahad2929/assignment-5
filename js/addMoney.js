@@ -9,45 +9,64 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
    const newBalance = balance + addMoney ;
    const bala = balance2 - addMoney;
 
-   if( addMoney> 0){
-    alert('Your Donation is Added')
+   if(  addMoney  > 0){
+    alert(' Donation  Added')
+       
+    // Added history
+
+    const h = document.createElement('h');
+    h.classList.add('bg-yellow-300');
+    h.innerHTML = `<div class="bg-red-300 text-center m-5">
+    <h5 class="text-xl font-bold"> Added Donation </h5>
+    <p class="text-bold"> Donate for Flood at Noakhali,Bangladesh : ${addMoney} Tk. </p>
+    </div>
+    `
+    document.getElementById('history').appendChild(h);
    }
    else{
     alert('Donation Added Failed');
    }
    document.getElementById('main-balance').innerText = bala ;
    document.getElementById('account-balance').innerText = newBalance;
-
 });
 
 
         //  ...........card 2 .............
-document.getElementById('btn-add-money2').addEventListener('click',function(event){
-    event.preventDefault();
-     
-    const addMoney1 = getInputValueById('input-add-money2');
-    const balance1 = getTextValueById('account-balance2');
-    const balance2 = getTextValueById('main-balance');
-    const newBalance2 =  addMoney1 + balance1 ;
-    const bala2 = balance2 - addMoney1;
 
+        document.getElementById('btn-add-money2').addEventListener('click',function(event){
+            event.preventDefault();
+             
+            const addMoney1 = getInput1ValueById('input-add-money2');
+            const balance1 = getText1ValueById('account-balance2');
+            const balance2 = getText1ValueById('main-balance');
+            const newBalance2 =  addMoney1 + balance1 ;
+            const bala2 = balance2 - addMoney1;
+    
+            if( addMoney1 > 0){
+                alert('Your Donation is Added');
+                // Added History
+                const h = document.createElement('h');
+                h.classList.add('bg-yellow-300');
+                h.innerHTML = `<div class="bg-lime-200 text-center m-5">
+                <h5 class="text-xl font-bold"> Added Donation </h5>
+                <p class="text-bold"> Donate for Flood Relief in Feni,Bangladesh : ${addMoney1} Tk. </p>
+                </div>
+                `
+                 document.getElementById('history').appendChild(h);
 
-    if( addMoney1 > 0){
-        alert('Your Donation is Added')
-       }
-       else{
-        alert('Donation Added Failed');
-       }
-
-
-   document.getElementById('main-balance').innerText = bala2 ;
-   document.getElementById('account-balance2').innerText = newBalance2;
-
-})
-
+                    document.getElementById('history') = addMoney1 ;  
+               }
+               else{
+                alert('Donation Added Failed');
+               }
+           document.getElementById('main-balance').innerText = bala2 ;
+           document.getElementById('account-balance3').innerText = newBalance2;
+        })
+    
 
       // ..........card 3 ................
-     document.getElementById('btn-add-money3').addEventListener('click',function(event){
+     document.getElementById('btn-add-money3')
+     .addEventListener('click',function(event){
         event.preventDefault();
          
         const addMoney2 = getInput1ValueById('input-add-money3');
@@ -58,28 +77,34 @@ document.getElementById('btn-add-money2').addEventListener('click',function(even
 
         if( addMoney2 > 0){
             alert('Your Donation is Added')
+        //   Added History
+            const r = document.createElement('c');
+            r.classList.add('bg-yellow-300');
+            r.innerHTML = `<div class="bg-orange-200 text-center m-5">
+            <h5 class="text-xl font-bold"> Added Donation </h5>
+            <p class="text-bold"> Donate For Injured in The Quota Movement : ${addMoney2} Tk. </p>
+            </div>
+            `
+            document.getElementById('history').appendChild(r);
+
            }
            else{
             alert('Donation Added Failed');
            }
-    
        document.getElementById('main-balance').innerText = bala3 ;
        document.getElementById('account-balance3').innerText = newBalance3;
     
     })
 
+// ......................................................
 
-    //  show donation 
-    document.getElementById('show-donation')
-    .addEventListener('click',function(){
-   console.log('show donation button clicked')
-   showDonationById(show-donation)
-    });
-    document.getElementById('history').addEventListener('click',function(){
+document.getElementById('show-donation')
+.addEventListener('click',function(){
 
-        showhistoryById('history');
+showDonationById('main-section');
+})
+document.getElementById('history1')
+.addEventListener('click',function(){
 
-    })
-    document.getElementById('show-donation').addEventListener('click',function(){
-        showDonationById('show-donation')
-    })
+showDonationById('history');
+})

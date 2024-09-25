@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
@@ -29,20 +29,16 @@
     </section>
         <section>
             <div class="text-center m-5">
-                <button id="show-donation1" class="btn btn-success">Donation</button>
+                <button id="show-donation" class="btn btn-success">Donation</button>
                 <button id="history1" class="btn btn-outline btn-success">Histoy</button>
             </div>
-            <!-- history start -->
-            <div id="history" class="hidden">
-                <h2 class="text-5xl text-center">Histoy</h2>
-            </div>
-            <!-- history end -->
         </section>
         <div class="divider"></div>
     </header>
     <main>
+      <div id="main-section">
         <!-- card 1 -->
-          <section id="section1" class="md:px-24 py-5">
+          <section  class="md:px-24 py-5">
             <div class="md:flex rounded-lg shadow-xl">
                 <img class="p-8" src="assets/noakhali.png" alt="">
                 <div class="card-body">
@@ -65,7 +61,7 @@
               </div>
           </section>   
           <!-- card 2 -->
-          <section id="section2" class="md:px-24 py-5">
+          <section class="md:px-24 py-5">
             <div class="md:flex rounded-lg shadow-xl">
                 <img class="p-8" src="assets/feni.png" alt="">
                 <div class="card-body">
@@ -89,9 +85,8 @@
                 </div>
               </div>
           </section> 
-          
           <!-- card 3 -->
-          <section id="section3" class="md:px-24 py-5">
+          <section class="md:px-24 py-5">
             <div class="md:flex rounded-lg shadow-xl">
                 <img class="p-8" src="assets/quota-protest.png" alt="">
                 <div class="card-body">
@@ -117,6 +112,12 @@
                 </div>
               </div>
           </section> 
+        </div>
+          <!-- history start -->
+          <div id="history" class="hidden">
+            <h2 class="text-5xl text-center">History</h2>
+        </div>
+        <!-- history end -->
     </main>
     <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
