@@ -27,6 +27,7 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
     </div>
     `
     document.getElementById('history').appendChild(h);
+
    }
    else{
     alert('Donation Added Failed !');
